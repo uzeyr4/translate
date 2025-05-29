@@ -11,7 +11,7 @@ API_KEY = Api_key
 def home():
     return "hello"
 
-@app.get("/translate")
+@app.post("/translate")
 def translate_text(q: str = Query(...), target: str = "en", source: str = "tr"):
     url = f"https://translation.googleapis.com/language/translate/v2"
     params = {
