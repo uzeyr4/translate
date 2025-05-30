@@ -1,7 +1,7 @@
 # translate_api.py
 from fastapi import FastAPI, Query
 import requests
-from apikey import Api_key 
+
 from pydantic import BaseModel
 
 app = FastAPI()
