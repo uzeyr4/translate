@@ -3,11 +3,12 @@ from fastapi import FastAPI, Query
 import requests
 
 from pydantic import BaseModel
+import os
 
 app = FastAPI()
 
 
-
+API_KEY = os.environ.get('TRANSLATE_API_KEY')
 @app.get("/")
 def home():
     return "hello"
