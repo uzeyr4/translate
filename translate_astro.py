@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Query
 import requests
-from api_key import API_KEY
+#from api_key import API_KEY
 from pydantic import BaseModel
 import os
 
