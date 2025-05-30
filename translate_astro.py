@@ -6,7 +6,7 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-API_KEY = Api_key
+
 
 @app.get("/")
 def home():
