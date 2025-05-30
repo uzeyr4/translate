@@ -1,4 +1,3 @@
-# translate_api.py
 from fastapi import FastAPI, Query
 import requests
 from api_key import API_KEY
@@ -7,6 +6,7 @@ import os
 
 app = FastAPI()
 
+API_KEY = os.environ.get('TRANSLATE_API_KEY')# translate_api.py
 
 @app.get("/")
 def home():
